@@ -1,61 +1,85 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🚀 Nexo App
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> Sua conexão com pessoas e informações relevantes.
 
-## About Laravel
+## 📌 Visão Geral
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Nexo App é uma plataforma de microblogging e rede social projetada para ser mais do que apenas um lugar para se conectar com amigos. O projeto nasce da ideia de criar um "nexo" entre a interação social humana e o acesso inteligente a informações do dia a dia, de forma fluida e integrada à experiência do usuário.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Enquanto os usuários podem criar perfis, postar mensagens e seguir uns aos outros em uma timeline familiar, o grande diferencial do Nexo App são as **Contas de Sistema Inteligentes**. Estas contas especiais fornecem conteúdo dinâmâmico e contextualizado, transformando o feed de notícias em uma ferramenta útil e personalizada.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Funcionalidades Principais
 
-## Learning Laravel
+### 👥 Interação Social
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Perfis de Usuário:** Páginas personalizadas com informações e posts de cada membro.
+- **Postagens na Timeline:** Publicação de mensagens de texto curtas.
+- **Sistema de Seguir:** Usuários podem seguir e deixar de seguir outros para customizar seu feed.
+- **Feed Cronológico:** A timeline principal exibe os posts mais recentes das contas que o usuário segue.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 🤖 Contas de Sistema Inteligentes (O Diferencial)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+O coração do Nexo App. Em vez de bots passivos, são fontes de informação viva que publicam conteúdo relevante baseado em dados externos e na localização do usuário. Exemplos incluem:
 
-## Laravel Sponsors
+- **@Clima:** Ao ser visitada, esta conta utiliza a geolocalização do navegador do usuário para fornecer a previsão do tempo exata para sua região, formatada como um post.
+- **@Notícias:** Publica as manchetes mais recentes de portais de notícias, mantendo os usuários informados.
+- **@Trânsito:** Poderia fornecer atualizações sobre as condições de tráfego na cidade do usuário (via integração com APIs como Google Maps).
+- **@Cotações:** Postaria atualizações sobre o mercado financeiro ou criptomoedas.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🎯 Objetivo do Projeto
 
-### Premium Partners
+Este é um projeto pessoal com o objetivo de aprofundar os conhecimentos no ecossistema Laravel. Os principais focos de aprendizado são:
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+- Construir uma aplicação robusta seguindo as melhores práticas de arquitetura de software (Services, Repositories).
+- Desenvolver um sistema de banco de dados complexo com relacionamentos (Many-to-Many).
+- Integrar a aplicação com múltiplas APIs de terceiros (Clima, Notícias, etc.).
+- Criar uma experiência de usuário dinâmica com o auxílio de JavaScript no frontend para requisições assíncronas (AJAX).
 
-## Contributing
+## 🛠️ Tecnologias Utilizadas
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- **Backend:** `Laravel 12+` (`PHP 8.2+`)
+- **Banco de Dados:** `PostgreSQL`
+- **Ambiente de Desenvolvimento:** `Laravel Sail` (Docker)
+- **Frontend:** `Blade`, `Vite`, `JavaScript`
+- **Controle de Versão:** `Git` & `GitHub`
 
-## Code of Conduct
+## 🚀 Como Executar o Projeto Localmente
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+**Pré-requisitos:** Docker Desktop ou Docker Engine/CLI.
 
-## Security Vulnerabilities
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/seu-usuario/nexo-app.git](https://github.com/seu-usuario/nexo-app.git)
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+2.  **Navegue até a pasta do projeto:**
+    ```bash
+    cd nexo-app
+    ```
 
-## License
+3.  **Copie o arquivo de ambiente:**
+    ```bash
+    cp .env.example .env
+    ```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+4.  **Suba os containers do Sail:**
+    ```bash
+    ./vendor/bin/sail up -d
+    ```
+
+5.  **Instale as dependências do Composer:**
+    ```bash
+    ./vendor/bin/sail composer install
+    ```
+
+6.  **Gere a chave da aplicação:**
+    ```bash
+    ./vendor/bin/sail artisan key:generate
+    ```
+
+7.  **Rode as migrations para criar as tabelas do banco:**
+    ```bash
+    ./vendor/bin/sail artisan migrate
+    ```
+
+8.  **Acesse a aplicação** no seu navegador em: `http://localhost`
